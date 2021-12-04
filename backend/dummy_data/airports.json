@@ -1,0 +1,22 @@
+[{
+  "_id": {
+    "$oid": "61944df78ab8ed6326dc354b"
+  },
+  "airportCode": "SJC",
+  "address": "1701 Airport Blvd, San Jose, CA 95110",
+  "phone": " (408) 392-3600"
+},{
+  "_id": {
+    "$oid": "6194536ed644b663e4eb4255"
+  },
+  "airportCode": "SFO",
+  "address": "San Francisco, CA 94128",
+  "phone": " (650) 821-8211"
+},{
+  "_id": {
+    "$oid": "6194557923d13864d5576d2c"
+  },
+  "airportCode": "JFK",
+  "address": "Queens, NY 11430",
+  "phone": "(718) 244-4444"
+}]

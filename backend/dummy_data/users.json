@@ -1,0 +1,67 @@
+[{
+  "_id": {
+    "$oid": "619063b25f5151a34bfb9619"
+  },
+  "role": [],
+  "username": "Test029",
+  "address": {
+    "zipcode": "95050",
+    "country": "United States",
+    "state": "CA",
+    "city": "Santa Clara",
+    "streetAddress": "2222 Bigtree Ave"
+  },
+  "dateOfBirth": {
+    "$date": "1991-01-01T08:00:00Z"
+  },
+  "lastName": "test",
+  "firstName": "Test029",
+  "dateJoined": {
+    "$date": "2021-11-14T01:17:38.710Z"
+  },
+  "hash": "$2a$10$0YtR/CRrPROe4SSgZyJWkusHh.zopyb4pnzBdgNq9IOaV/CgdxUqy"
+},{
+  "_id": {
+    "$oid": "61909a8cb53cccb908a65061"
+  },
+  "role": [],
+  "username": "Test030",
+  "address": {
+    "zipcode": "95050",
+    "country": "United States",
+    "state": "CA",
+    "city": "Santa Clara",
+    "streetAddress": "2222 Bigtree Ave"
+  },
+  "dateOfBirth": {
+    "$date": "1991-01-01T08:00:00Z"
+  },
+  "lastName": "test",
+  "firstName": "Test030",
+  "dateJoined": {
+    "$date": "2021-11-14T05:11:40.145Z"
+  },
+  "hash": "$2a$10$zrkYrKeMepxC.twzljkhTOxvAqAVpDP.sow3NvWk6xcEbR4Z8kSUq"
+},{
+  "_id": {
+    "$oid": "61940d0e62e448563f33ef58"
+  },
+  "role": [],
+  "username": "Test031",
+  "address": {
+    "zipcode": "95050",
+    "country": "United States",
+    "state": "CA",
+    "city": "Santa Clara",
+    "streetAddress": "2222 Bigtree Ave"
+  },
+  "dateOfBirth": {
+    "$date": "1991-01-01T08:00:00Z"
+  },
+  "lastName": "test",
+  "firstName": "Test031",
+  "dateJoined": {
+    "$date": "2021-11-16T19:57:02.570Z"
+  },
+  "hash": "$2a$10$nu66v8ej1T2Z8PLWf9EwkOK0HKJIjOb8cZLeSHUhF7QkzFsbg3Zx2"
+}]

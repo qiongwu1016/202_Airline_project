@@ -1,0 +1,97 @@
+[{
+  "_id": {
+    "$oid": "619481a3d70f1b6a012e2049"
+  },
+  "numberOfSeats": 100,
+  "seats": [
+    {
+      "_id": {
+        "$oid": "619481a3d70f1b6a012e204a"
+      },
+      "rowNumber": "05",
+      "positionNumber": "A",
+      "seatClass": "1",
+      "status": "available",
+      "userId": ""
+    },
+    {
+      "_id": {
+        "$oid": "619481a3d70f1b6a012e204b"
+      },
+      "rowNumber": "05",
+      "positionNumber": "B",
+      "seatClass": "1",
+      "status": "available",
+      "userId": ""
+    },
+    {
+      "_id": {
+        "$oid": "619481a3d70f1b6a012e204c"
+      },
+      "rowNumber": "05",
+      "positionNumber": "C",
+      "seatClass": "1",
+      "status": "available",
+      "userId": ""
+    },
+    {
+      "_id": {
+        "$oid": "619481a3d70f1b6a012e204d"
+      },
+      "rowNumber": "11",
+      "positionNumber": "D",
+      "seatClass": "1",
+      "status": "available",
+      "userId": ""
+    }
+  ],
+  "airplaneId": "737_03"
+},{
+  "_id": {
+    "$oid": "61a1b5e5c77d31656a194b69"
+  },
+  "numberOfSeats": 60,
+  "seats": [
+    {
+      "_id": {
+        "$oid": "619481a3d70f1b6a012e204a"
+      },
+      "rowNumber": "05",
+      "positionNumber": "A",
+      "seatClass": "1",
+      "status": "available",
+      "userId": ""
+    },
+    {
+      "_id": {
+        "$oid": "619481a3d70f1b6a012e204b"
+      },
+      "rowNumber": "05",
+      "positionNumber": "B",
+      "seatClass": "1",
+      "status": "available",
+      "userId": ""
+    },
+    {
+      "_id": {
+        "$oid": "619481a3d70f1b6a012e204c"
+      },
+      "rowNumber": "05",
+      "positionNumber": "C",
+      "seatClass": "1",
+      "status": "available",
+      "userId": ""
+    },
+    {
+      "_id": {
+        "$oid": "619481a3d70f1b6a012e204d"
+      },
+      "rowNumber": "11",
+      "positionNumber": "D",
+      "seatClass": "1",
+      "status": "available",
+      "userId": ""
+    }
+  ],
+  "airplaneId": "737_02"
+}]

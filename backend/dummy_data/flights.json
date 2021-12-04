@@ -1,0 +1,817 @@
+[{
+  "_id": {
+    "$oid": "61a18aec6ee48176d1dcf3c1"
+  },
+  "flightNumber": "F0034",
+  "airline": "United",
+  "depDateTime": {
+    "$date": "2021-08-30T00:00:00Z"
+  },
+  "arrDateTime": {
+    "$date": "2021-08-30T00:00:00Z"
+  },
+  "depAirport": "JFK",
+  "arrAirport": "SJC",
+  "flightId": "F0034@2021-08-30",
+  "aircraft": {
+    "_id": {
+      "$oid": "619481a3d70f1b6a012e2049"
+    },
+    "numberOfSeats": 100,
+    "seats": [
+      {
+        "status": "available",
+        "_id": {
+          "$oid": "619481a3d70f1b6a012e204a"
+        },
+        "rowNumber": "05",
+        "positionNumber": "A",
+        "seatClass": "1",
+        "userId": ""
+      },
+      {
+        "status": "available",
+        "_id": {
+          "$oid": "619481a3d70f1b6a012e204b"
+        },
+        "rowNumber": "05",
+        "positionNumber": "B",
+        "seatClass": "1",
+        "userId": ""
+      },
+      {
+        "status": "available",
+        "_id": {
+          "$oid": "619481a3d70f1b6a012e204c"
+        },
+        "rowNumber": "05",
+        "positionNumber": "C",
+        "seatClass": "1",
+        "userId": ""
+      },
+      {
+        "status": "available",
+        "_id": {
+          "$oid": "619481a3d70f1b6a012e204d"
+        },
+        "rowNumber": "11",
+        "positionNumber": "D",
+        "seatClass": "1",
+        "userId": ""
+      }
+    ],
+    "airplaneId": "737_03"
+  },
+  "__v": 0,
+  "price": {
+    "$numberDecimal": "0"
+  }
+},{
+  "_id": {
+    "$oid": "61a18cf06ee481324adcf3c2"
+  },
+  "flightNumber": "F0035",
+  "airline": "Southwest Airlines",
+  "depDateTime": {
+    "$date": "2021-08-30T00:00:00Z"
+  },
+  "arrDateTime": {
+    "$date": "2021-08-30T00:00:00Z"
+  },
+  "depAirport": "JFK",
+  "arrAirport": "SJC",
+  "flightId": "F0035@2021-08-30",
+  "aircraft": {
+    "_id": {
+      "$oid": "619481a3d70f1b6a012e2049"
+    },
+    "numberOfSeats": 100,
+    "seats": [
+      {
+        "status": "available",
+        "_id": {
+          "$oid": "619481a3d70f1b6a012e204a"
+        },
+        "rowNumber": "05",
+        "positionNumber": "A",
+        "seatClass": "1",
+        "userId": ""
+      },
+      {
+        "status": "available",
+        "_id": {
+          "$oid": "619481a3d70f1b6a012e204b"
+        },
+        "rowNumber": "05",
+        "positionNumber": "B",
+        "seatClass": "1",
+        "userId": ""
+      },
+      {
+        "status": "available",
+        "_id": {
+          "$oid": "619481a3d70f1b6a012e204c"
+        },
+        "rowNumber": "05",
+        "positionNumber": "C",
+        "seatClass": "1",
+        "userId": ""
+      },
+      {
+        "status": "available",
+        "_id": {
+          "$oid": "619481a3d70f1b6a012e204d"
+        },
+        "rowNumber": "11",
+        "positionNumber": "D",
+        "seatClass": "1",
+        "userId": ""
+      }
+    ],
+    "airplaneId": "737_03"
+  },
+  "__v": 0,
+  "price": {
+    "$numberDecimal": "200"
+  }
+},{
+  "_id": {
+    "$oid": "61a18d0c6ee4810503dcf3c3"
+  },
+  "flightNumber": "F0036",
+  "airline": "Southwest Airlines",
+  "depDateTime": {
+    "$date": "2021-09-05T00:00:00Z"
+  },
+  "arrDateTime": {
+    "$date": "2021-09-05T00:00:00Z"
+  },
+  "depAirport": "SJC",
+  "arrAirport": "JFK",
+  "flightId": "F0036@2021-09-05",
+  "aircraft": {
+    "_id": {
+      "$oid": "619481a3d70f1b6a012e2049"
+    },
+    "numberOfSeats": 100,
+    "seats": [
+      {
+        "status": "available",
+        "_id": {
+          "$oid": "619481a3d70f1b6a012e204a"
+        },
+        "rowNumber": "05",
+        "positionNumber": "A",
+        "seatClass": "1",
+        "userId": ""
+      },
+      {
+        "status": "available",
+        "_id": {
+          "$oid": "619481a3d70f1b6a012e204b"
+        },
+        "rowNumber": "05",
+        "positionNumber": "B",
+        "seatClass": "1",
+        "userId": ""
+      },
+      {
+        "status": "available",
+        "_id": {
+          "$oid": "619481a3d70f1b6a012e204c"
+        },
+        "rowNumber": "05",
+        "positionNumber": "C",
+        "seatClass": "1",
+        "userId": ""
+      },
+      {
+        "status": "available",
+        "_id": {
+          "$oid": "619481a3d70f1b6a012e204d"
+        },
+        "rowNumber": "11",
+        "positionNumber": "D",
+        "seatClass": "1",
+        "userId": ""
+      }
+    ],
+    "airplaneId": "737_03"
+  },
+  "__v": 0,
+  "price": {
+    "$numberDecimal": "300"
+  }
+},{
+  "_id": {
+    "$oid": "61a199aba828375d7b2edac3"
+  },
+  "flightNumber": "F0036",
+  "airline": "Southwest Airlines",
+  "depDateTime": {
+    "$date": "2021-09-05T00:00:00Z"
+  },
+  "arrDateTime": {
+    "$date": "2021-09-05T00:00:00Z"
+  },
+  "depAirport": "JFK",
+  "arrAirport": "SJC",
+  "flightId": "F0036@2021-09-05",
+  "aircraft": {
+    "_id": {
+      "$oid": "619481a3d70f1b6a012e2049"
+    },
+    "numberOfSeats": 100,
+    "seats": [
+      {
+        "status": "available",
+        "_id": {
+          "$oid": "619481a3d70f1b6a012e204a"
+        },
+        "rowNumber": "05",
+        "positionNumber": "A",
+        "seatClass": "1",
+        "userId": ""
+      },
+      {
+        "status": "available",
+        "_id": {
+          "$oid": "619481a3d70f1b6a012e204b"
+        },
+        "rowNumber": "05",
+        "positionNumber": "B",
+        "seatClass": "1",
+        "userId": ""
+      },
+      {
+        "status": "available",
+        "_id": {
+          "$oid": "619481a3d70f1b6a012e204c"
+        },
+        "rowNumber": "05",
+        "positionNumber": "C",
+        "seatClass": "1",
+        "userId": ""
+      },
+      {
+        "status": "available",
+        "_id": {
+          "$oid": "619481a3d70f1b6a012e204d"
+        },
+        "rowNumber": "11",
+        "positionNumber": "D",
+        "seatClass": "1",
+        "userId": ""
+      }
+    ],
+    "airplaneId": "737_03"
+  },
+  "__v": 0,
+  "price": {
+    "$numberDecimal": "250"
+  }
+},{
+  "_id": {
+    "$oid": "61a19a16ab165b10e27ec9b4"
+  },
+  "flightNumber": "F0036",
+  "airline": "Southwest Airlines",
+  "depDateTime": {
+    "$date": "2021-09-05T00:00:00Z"
+  },
+  "arrDateTime": {
+    "$date": "2021-09-05T00:00:00Z"
+  },
+  "depAirport": "JFK",
+  "arrAirport": "SJC",
+  "flightId": "F0036@2021-09-05",
+  "aircraft": {
+    "_id": {
+      "$oid": "619481a3d70f1b6a012e2049"
+    },
+    "numberOfSeats": 100,
+    "seats": [
+      {
+        "status": "available",
+        "_id": {
+          "$oid": "619481a3d70f1b6a012e204a"
+        },
+        "rowNumber": "05",
+        "positionNumber": "A",
+        "seatClass": "1",
+        "userId": ""
+      },
+      {
+        "status": "available",
+        "_id": {
+          "$oid": "619481a3d70f1b6a012e204b"
+        },
+        "rowNumber": "05",
+        "positionNumber": "B",
+        "seatClass": "1",
+        "userId": ""
+      },
+      {
+        "status": "available",
+        "_id": {
+          "$oid": "619481a3d70f1b6a012e204c"
+        },
+        "rowNumber": "05",
+        "positionNumber": "C",
+        "seatClass": "1",
+        "userId": ""
+      },
+      {
+        "status": "available",
+        "_id": {
+          "$oid": "619481a3d70f1b6a012e204d"
+        },
+        "rowNumber": "11",
+        "positionNumber": "D",
+        "seatClass": "1",
+        "userId": ""
+      }
+    ],
+    "airplaneId": "737_03"
+  },
+  "__v": 0,
+  "price": {
+    "$numberDecimal": "290"
+  }
+},{
+  "_id": {
+    "$oid": "61a19a1dab165b29ef7ec9b5"
+  },
+  "flightNumber": "F0036",
+  "airline": "Southwest Airlines",
+  "depDateTime": {
+    "$date": "2021-09-05T00:00:00Z"
+  },
+  "arrDateTime": {
+    "$date": "2021-09-05T00:00:00Z"
+  },
+  "depAirport": "JFK",
+  "arrAirport": "SJC",
+  "flightId": "F0036@2021-09-05",
+  "aircraft": {
+    "_id": {
+      "$oid": "619481a3d70f1b6a012e2049"
+    },
+    "numberOfSeats": 100,
+    "seats": [
+      {
+        "status": "available",
+        "_id": {
+          "$oid": "619481a3d70f1b6a012e204a"
+        },
+        "rowNumber": "05",
+        "positionNumber": "A",
+        "seatClass": "1",
+        "userId": ""
+      },
+      {
+        "status": "available",
+        "_id": {
+          "$oid": "619481a3d70f1b6a012e204b"
+        },
+        "rowNumber": "05",
+        "positionNumber": "B",
+        "seatClass": "1",
+        "userId": ""
+      },
+      {
+        "status": "available",
+        "_id": {
+          "$oid": "619481a3d70f1b6a012e204c"
+        },
+        "rowNumber": "05",
+        "positionNumber": "C",
+        "seatClass": "1",
+        "userId": ""
+      },
+      {
+        "status": "available",
+        "_id": {
+          "$oid": "619481a3d70f1b6a012e204d"
+        },
+        "rowNumber": "11",
+        "positionNumber": "D",
+        "seatClass": "1",
+        "userId": ""
+      }
+    ],
+    "airplaneId": "737_03"
+  },
+  "__v": 0,
+  "price": {
+    "$numberDecimal": "799"
+  }
+},{
+  "_id": {
+    "$oid": "61a19a37ab165b1c4f7ec9b6"
+  },
+  "flightNumber": "F0037",
+  "airline": "Southwest Airlines",
+  "depDateTime": {
+    "$date": "2021-09-10T00:00:00Z"
+  },
+  "arrDateTime": {
+    "$date": "2021-09-10T00:00:00Z"
+  },
+  "depAirport": "JFK",
+  "arrAirport": "SFO",
+  "flightId": "F0037@2021-09-10",
+  "aircraft": {
+    "_id": {
+      "$oid": "619481a3d70f1b6a012e2049"
+    },
+    "numberOfSeats": 100,
+    "seats": [
+      {
+        "status": "available",
+        "_id": {
+          "$oid": "619481a3d70f1b6a012e204a"
+        },
+        "rowNumber": "05",
+        "positionNumber": "A",
+        "seatClass": "1",
+        "userId": ""
+      },
+      {
+        "status": "available",
+        "_id": {
+          "$oid": "619481a3d70f1b6a012e204b"
+        },
+        "rowNumber": "05",
+        "positionNumber": "B",
+        "seatClass": "1",
+        "userId": ""
+      },
+      {
+        "status": "available",
+        "_id": {
+          "$oid": "619481a3d70f1b6a012e204c"
+        },
+        "rowNumber": "05",
+        "positionNumber": "C",
+        "seatClass": "1",
+        "userId": ""
+      },
+      {
+        "status": "available",
+        "_id": {
+          "$oid": "619481a3d70f1b6a012e204d"
+        },
+        "rowNumber": "11",
+        "positionNumber": "D",
+        "seatClass": "1",
+        "userId": ""
+      }
+    ],
+    "airplaneId": "737_03"
+  },
+  "__v": 0,
+  "price": {
+    "$numberDecimal": "128"
+  }
+},{
+  "_id": {
+    "$oid": "61a19a4bab165bb1bb7ec9b7"
+  },
+  "flightNumber": "F0038",
+  "airline": "Southwest Airlines",
+  "depDateTime": {
+    "$date": "2021-09-20T00:00:00Z"
+  },
+  "arrDateTime": {
+    "$date": "2021-09-20T00:00:00Z"
+  },
+  "depAirport": "SFO",
+  "arrAirport": "JFK",
+  "flightId": "F0038@2021-09-20",
+  "aircraft": {
+    "_id": {
+      "$oid": "619481a3d70f1b6a012e2049"
+    },
+    "numberOfSeats": 100,
+    "seats": [
+      {
+        "status": "available",
+        "_id": {
+          "$oid": "619481a3d70f1b6a012e204a"
+        },
+        "rowNumber": "05",
+        "positionNumber": "A",
+        "seatClass": "1",
+        "userId": ""
+      },
+      {
+        "status": "available",
+        "_id": {
+          "$oid": "619481a3d70f1b6a012e204b"
+        },
+        "rowNumber": "05",
+        "positionNumber": "B",
+        "seatClass": "1",
+        "userId": ""
+      },
+      {
+        "status": "available",
+        "_id": {
+          "$oid": "619481a3d70f1b6a012e204c"
+        },
+        "rowNumber": "05",
+        "positionNumber": "C",
+        "seatClass": "1",
+        "userId": ""
+      },
+      {
+        "status": "available",
+        "_id": {
+          "$oid": "619481a3d70f1b6a012e204d"
+        },
+        "rowNumber": "11",
+        "positionNumber": "D",
+        "seatClass": "1",
+        "userId": ""
+      }
+    ],
+    "airplaneId": "737_03"
+  },
+  "__v": 0,
+  "price": {
+    "$numberDecimal": "490"
+  }
+},{
+  "_id": {
+    "$oid": "61a1b531aa44bb5338317355"
+  },
+  "flightNumber": "F0039",
+  "airline": "Southwest Airlines",
+  "depDateTime": {
+    "$date": "2021-09-20T00:00:00Z"
+  },
+  "arrDateTime": {
+    "$date": "2021-09-20T00:00:00Z"
+  },
+  "depAirport": "SFO",
+  "arrAirport": "JFK",
+  "price": {
+    "$numberDecimal": "330"
+  },
+  "flightId": "F0038@2021-09-20",
+  "aircraft": {
+    "_id": {
+      "$oid": "619481a3d70f1b6a012e2049"
+    },
+    "numberOfSeats": 100,
+    "seats": [
+      {
+        "status": "available",
+        "_id": {
+          "$oid": "619481a3d70f1b6a012e204a"
+        },
+        "rowNumber": "05",
+        "positionNumber": "A",
+        "seatClass": "1",
+        "userId": ""
+      },
+      {
+        "status": "available",
+        "_id": {
+          "$oid": "619481a3d70f1b6a012e204b"
+        },
+        "rowNumber": "05",
+        "positionNumber": "B",
+        "seatClass": "1",
+        "userId": ""
+      },
+      {
+        "status": "available",
+        "_id": {
+          "$oid": "619481a3d70f1b6a012e204c"
+        },
+        "rowNumber": "05",
+        "positionNumber": "C",
+        "seatClass": "1",
+        "userId": ""
+      },
+      {
+        "status": "available",
+        "_id": {
+          "$oid": "619481a3d70f1b6a012e204d"
+        },
+        "rowNumber": "11",
+        "positionNumber": "D",
+        "seatClass": "1",
+        "userId": ""
+      }
+    ],
+    "airplaneId": "737_03"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61a1b552aa44bb17f0317356"
+  },
+  "flightNumber": "F0040",
+  "airline": "Southwest Airlines",
+  "depDateTime": {
+    "$date": "2021-09-20T00:00:00Z"
+  },
+  "arrDateTime": {
+    "$date": "2021-09-20T00:00:00Z"
+  },
+  "depAirport": "SFO",
+  "arrAirport": "JFK",
+  "price": {
+    "$numberDecimal": "500"
+  },
+  "flightId": "F0040@2021-09-20",
+  "aircraft": {
+    "_id": {
+      "$oid": "619481a3d70f1b6a012e2049"
+    },
+    "numberOfSeats": 100,
+    "seats": [
+      {
+        "status": "available",
+        "_id": {
+          "$oid": "619481a3d70f1b6a012e204a"
+        },
+        "rowNumber": "05",
+        "positionNumber": "A",
+        "seatClass": "1",
+        "userId": ""
+      },
+      {
+        "status": "available",
+        "_id": {
+          "$oid": "619481a3d70f1b6a012e204b"
+        },
+        "rowNumber": "05",
+        "positionNumber": "B",
+        "seatClass": "1",
+        "userId": ""
+      },
+      {
+        "status": "available",
+        "_id": {
+          "$oid": "619481a3d70f1b6a012e204c"
+        },
+        "rowNumber": "05",
+        "positionNumber": "C",
+        "seatClass": "1",
+        "userId": ""
+      },
+      {
+        "status": "available",
+        "_id": {
+          "$oid": "619481a3d70f1b6a012e204d"
+        },
+        "rowNumber": "11",
+        "positionNumber": "D",
+        "seatClass": "1",
+        "userId": ""
+      }
+    ],
+    "airplaneId": "737_03"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61a1b62aaa44bb4263317357"
+  },
+  "flightNumber": "F0041",
+  "airline": "Southwest Airlines",
+  "depDateTime": {
+    "$date": "2021-09-20T00:00:00Z"
+  },
+  "arrDateTime": {
+    "$date": "2021-09-20T00:00:00Z"
+  },
+  "depAirport": "SFO",
+  "arrAirport": "JFK",
+  "price": {
+    "$numberDecimal": "499"
+  },
+  "flightId": "F0041@2021-09-20",
+  "aircraft": {
+    "_id": {
+      "$oid": "61a1b5e5c77d31656a194b69"
+    },
+    "numberOfSeats": 60,
+    "seats": [
+      {
+        "status": "available",
+        "_id": {
+          "$oid": "619481a3d70f1b6a012e204a"
+        },
+        "rowNumber": "05",
+        "positionNumber": "A",
+        "seatClass": "1",
+        "userId": ""
+      },
+      {
+        "status": "available",
+        "_id": {
+          "$oid": "619481a3d70f1b6a012e204b"
+        },
+        "rowNumber": "05",
+        "positionNumber": "B",
+        "seatClass": "1",
+        "userId": ""
+      },
+      {
+        "status": "available",
+        "_id": {
+          "$oid": "619481a3d70f1b6a012e204c"
+        },
+        "rowNumber": "05",
+        "positionNumber": "C",
+        "seatClass": "1",
+        "userId": ""
+      },
+      {
+        "status": "available",
+        "_id": {
+          "$oid": "619481a3d70f1b6a012e204d"
+        },
+        "rowNumber": "11",
+        "positionNumber": "D",
+        "seatClass": "1",
+        "userId": ""
+      }
+    ],
+    "airplaneId": "737_02"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61a1b78c8c5b9e6c70ed12a7"
+  },
+  "flightNumber": "F0043",
+  "airline": "United Airlines",
+  "depDateTime": {
+    "$date": "2021-09-22T00:00:00Z"
+  },
+  "arrDateTime": {
+    "$date": "2021-09-22T00:00:00Z"
+  },
+  "depAirport": "SJC",
+  "arrAirport": "JFK",
+  "price": {
+    "$numberDecimal": "699"
+  },
+  "flightId": "F0043@2021-09-22",
+  "aircraft": {
+    "_id": {
+      "$oid": "61a1b5e5c77d31656a194b69"
+    },
+    "numberOfSeats": 60,
+    "seats": [
+      {
+        "status": "available",
+        "_id": {
+          "$oid": "619481a3d70f1b6a012e204a"
+        },
+        "rowNumber": "05",
+        "positionNumber": "A",
+        "seatClass": "1",
+        "userId": ""
+      },
+      {
+        "status": "available",
+        "_id": {
+          "$oid": "619481a3d70f1b6a012e204b"
+        },
+        "rowNumber": "05",
+        "positionNumber": "B",
+        "seatClass": "1",
+        "userId": ""
+      },
+      {
+        "status": "available",
+        "_id": {
+          "$oid": "619481a3d70f1b6a012e204c"
+        },
+        "rowNumber": "05",
+        "positionNumber": "C",
+        "seatClass": "1",
+        "userId": ""
+      },
+      {
+        "status": "available",
+        "_id": {
+          "$oid": "619481a3d70f1b6a012e204d"
+        },
+        "rowNumber": "11",
+        "positionNumber": "D",
+        "seatClass": "1",
+        "userId": ""
+      }
+    ],
+    "airplaneId": "737_02"
+  },
+  "__v": 0
+}]
