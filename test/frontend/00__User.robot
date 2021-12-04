@@ -16,7 +16,7 @@ ${ALERT_XPATH}        //div[contains(@class, 'alert')]
 ${USERNAME_XPATH}       //input[@name='username']
 ${PASSWORD_XPATH}       //input[@name='password']
 ${LOGIN_BTN_XPATH}      //button[text()='Login']
-${REGISTER_LK_XPATH}    //a[text()='Register']
+${REGISTER_LK_XPATH}    //a[@href="/register"]
 ${REGISTER_BTN_XPATH}   //button[text()='Register']
 ${ERROR_TEXTFIELD}      //div[@class="form-group has-error"]
 
@@ -42,6 +42,7 @@ Register With Test User Account
     Click Link       ${REGISTER_LK_XPATH}
     Input Text    firstName    Donald
     Input Text    lastName     Biden
+    Input Text    email     donaldb@fakemail.com
     Input Text    username     donaldbiden
     Input Password    password     Maga2021!
     Click Element        dateOfBirth
@@ -58,4 +59,4 @@ Register With Test User Account
     Input Password   ${PASSWORD_XPATH}    Maga2021!
     Click Button     ${LOGIN_BTN_XPATH}
 
-    Page Should Contain    Hi Donald!
+    Page Should Contain    Passenger Name: Donald Biden

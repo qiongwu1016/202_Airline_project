@@ -23,6 +23,8 @@ module.exports = {
         // global app config object
         config: JSON.stringify({
             apiUrl: 'http://localhost:4000'
+            // if production server
+            // apiUrl: '/api'
         })
     }
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Segment, Button, Form, Input, Header, Table } from 'semantic-ui-react';
+import { Grid, Segment, Button, Form, Input, Header, Table, Radio } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 
@@ -24,12 +24,18 @@ class FlightSearch extends React.Component {
                 departDate: '',
                 returnDate: ''
             },
+            selectedFlight: {
+                departFlight: '',
+                returnFlight: ''
+            },
             submitted: false
         };
 
         this.handleTripType = this.handleTripType.bind(this);
         this.handleChange = this.handleChange.bind(this);
-        this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleSearch = this.handleSearch.bind(this);
+        this.handleBook = this.handleBook.bind(this);
+        this.handleFlightRadio = this.handleFlightRadio.bind(this);
     }
 
     handleChange(event) {
@@ -66,7 +72,25 @@ class FlightSearch extends React.Component {
         }
     }
 
-    handleSubmit(event) {
+    handleFlightRadio(event, data, flight, index) {
+        if (data.name == 'departGroup') {
+            this.setState({
+                selectedFlight: {
+                    ...this.state.selectedFlight,
+                    departFlight: flight
+                }
+            })
+        } else if (data.name == 'returnGroup') {
+            this.setState({
+                selectedFlight: {
+                    ...this.state.selectedFlight,
+                    returnFlight: flight
+                }
+            })
+        }
+    }
+
+    handleSearch(event) {
         event.preventDefault();
 
         this.setState({ submitted: true });
@@ -76,9 +100,19 @@ class FlightSearch extends React.Component {
         }
     }
 
+    handleBook(event) {
+        event.preventDefault();
+        
+        this.setState({ submitted: true });
+        const { selectedFlight } = this.state;
+        if (selectedFlight.departFlight) {
+            this.props.toBook(selectedFlight);
+        }
+    }
+
     render() {
         const { airport } = this.props.airport;
-        const { submitted, search } = this.state;
+        const { submitted, search, selectedFlight } = this.state;
         const { flights } = this.props.flight
         return (
             <div>
@@ -91,7 +125,7 @@ class FlightSearch extends React.Component {
                         </Button.Group>
                     </Grid>
                     <Grid textAlign='center' column={2} divided="vertically">
-                        <Form name="form" onSubmit={this.handleSubmit}>
+                        <Form name="form" onSubmit={this.handleSearch}>
                             <Form.Group widths='equal'>
                                 <Form.Field required error={submitted && !search.departAirport}>
                                     <label>From</label>
@@ -147,57 +181,81 @@ class FlightSearch extends React.Component {
                     </Grid>
                 </Segment>
                 {flights && submitted && flights.departFlights.length > 0 &&
-                <Segment raised padded>
-                    <Table celled>
-                        <Table.Header>
-                            <Table.Row>
-                                <Table.HeaderCell></Table.HeaderCell>
-                                <Table.HeaderCell>Airline</Table.HeaderCell>
-                                <Table.HeaderCell>Flight Number</Table.HeaderCell>
-                                <Table.HeaderCell>Route</Table.HeaderCell>
-                                <Table.HeaderCell>Departure Date</Table.HeaderCell>
-                            </Table.Row>
-                        </Table.Header>
-                        <Table.Body>
-                            {flights.departFlights.map(function(flight, index) {
-                                return <Table.Row key={index}>
-                                    <Table.Cell></Table.Cell>
-                                    <Table.Cell>{flight.airline}</Table.Cell>
-                                    <Table.Cell>{flight.flightNumber}</Table.Cell>
-                                    <Table.Cell>{flight.depAirport}-{flight.arrAirport}</Table.Cell>
-                                    <Table.Cell>{flight.depDateTime}</Table.Cell>
+                <Form name="bookForm" onSubmit={this.handleBook}>
+                    <Segment raised padded>
+                        <Header>Departure Flights</Header>
+                        <Table celled>
+                            <Table.Header>
+                                <Table.Row>
+                                    <Table.HeaderCell></Table.HeaderCell>
+                                    <Table.HeaderCell>Airline</Table.HeaderCell>
+                                    <Table.HeaderCell>Flight Number</Table.HeaderCell>
+                                    <Table.HeaderCell>Route</Table.HeaderCell>
+                                    <Table.HeaderCell>Departure Date</Table.HeaderCell>
+                                    <Table.HeaderCell>Price</Table.HeaderCell>
                                 </Table.Row>
-                            })}
-                        </Table.Body>
-                    </Table>
+                            </Table.Header>
+                            <Table.Body>
+                                {flights.departFlights.map((flight, index) => {
+                                        return (<Table.Row key={index}>
+                                        <Table.Cell>
+                                            <Radio 
+                                                name='departGroup'
+                                                value={flight.flightId}
+                                                checked={selectedFlight.departFlight.flightId === flight.flightId}
+                                                onChange={(e, value) => this.handleFlightRadio(e, value, flight, index)}
+                                                />
+                                        </Table.Cell>
+                                        <Table.Cell>{flight.airline}</Table.Cell>
+                                        <Table.Cell>{flight.flightNumber}</Table.Cell>
+                                        <Table.Cell>{flight.depAirport}-{flight.arrAirport}</Table.Cell>
+                                        <Table.Cell>{flight.depDateTime}</Table.Cell>
+                                        <Table.Cell>${(Math.round(flight.price.$numberDecimal * 100) / 100).toFixed(2)}</Table.Cell>
+                                        
+                                    </Table.Row>)
+                                })}
+                            </Table.Body>
+                        </Table>
+                        {flights && submitted && search.roundTrip && flights.returnFlights.length > 0 &&
+                            <div><Header>Returning Flights</Header>
+                            <Table celled>
+                                <Table.Header>
+                                    <Table.Row>
+                                        <Table.HeaderCell></Table.HeaderCell>
+                                        <Table.HeaderCell>Airline</Table.HeaderCell>
+                                        <Table.HeaderCell>Flight Number</Table.HeaderCell>
+                                        <Table.HeaderCell>Route</Table.HeaderCell>
+                                        <Table.HeaderCell>Departure Date</Table.HeaderCell>
+                                    <Table.HeaderCell>Price</Table.HeaderCell>
+                                    </Table.Row>
+                                </Table.Header>
+                                <Table.Body>
+                                    {flights.returnFlights.map((flight, index) => {
+                                    return (<Table.Row key={index}>
+                                        <Table.Cell>
+                                            <Radio 
+                                                name='returnGroup'
+                                                value={flight.flightId}
+                                                checked={selectedFlight.returnFlight.flightId === flight.flightId}
+                                                onChange={(e, value) => this.handleFlightRadio(e, value, flight, index)}
+                                                />
+                                        </Table.Cell>
+                                        <Table.Cell>{flight.airline}</Table.Cell>
+                                        <Table.Cell>{flight.flightNumber}</Table.Cell>
+                                        <Table.Cell>{flight.depAirport}-{flight.arrAirport}</Table.Cell>
+                                        <Table.Cell>{flight.depDateTime}</Table.Cell>
+                                        <Table.Cell>${(Math.round(flight.price.$numberDecimal * 100) / 100).toFixed(2)}</Table.Cell>
+                                    </Table.Row>)
+                                })}
+                                </Table.Body>
+                            </Table>
+                            </div>
+                        }
+                        <Button>Book</Button>
                     </Segment>
+                </Form>
                 }
-                {flights && submitted && search.roundTrip && flights.returnFlights.length > 0 &&
-                <Segment raised padded>
-                    <Table celled>
-                        <Table.Header>
-                            <Table.Row>
-                                <Table.HeaderCell></Table.HeaderCell>
-                                <Table.HeaderCell>Airline</Table.HeaderCell>
-                                <Table.HeaderCell>Flight Number</Table.HeaderCell>
-                                <Table.HeaderCell>Route</Table.HeaderCell>
-                                <Table.HeaderCell>Departure Date</Table.HeaderCell>
-                            </Table.Row>
-                        </Table.Header>
-                        <Table.Body>
-                            {flights.returnFlights.map(function(flight, index) {
-                                return <Table.Row key={index}>
-                                    <Table.Cell></Table.Cell>
-                                    <Table.Cell>{flight.airline}</Table.Cell>
-                                    <Table.Cell>{flight.flightNumber}</Table.Cell>
-                                    <Table.Cell>{flight.depAirport}-{flight.arrAirport}</Table.Cell>
-                                    <Table.Cell>{flight.depDateTime}</Table.Cell>
-                                </Table.Row>
-                            })}
-                        </Table.Body>
-                    </Table>
-                    </Segment>
-                }   
+                
             </div>
         )
     }
@@ -212,6 +270,7 @@ function mapState(state) {
 
 const actionCreators = {
     search: flightActions.search,
+    toBook: flightActions.toBook,
     getAirports: airportActions.getAll
 }
 

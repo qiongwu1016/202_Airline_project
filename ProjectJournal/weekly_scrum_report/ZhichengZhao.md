@@ -29,3 +29,11 @@ Need to do: 1. setup docker(read me) 2. dashboard(add time to departure/arrival,
 11/16
 Setup docker; revised UI design for dashboard, flight search; modify user account api.
 Todo: implement backend code for mileage rewards account.
+
+11/23
+Self learn Mongo, Express, ReactJS, Node using javascript and git commonds, ask for help from teams who has more experience with the stack.
+Implement backend code for mileage rewards account, but has problems running / testing the api.
+Need to revise the api (from find and save to update directly), try to test api with postman.
+
+11/30
+Reward mileage api complete, reward add/use/get api tests good with postman. Have issue connecting to mongodb in the docker, cannot check if the database could update.

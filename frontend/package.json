@@ -1,9 +1,9 @@
 {
-  "name": "react-redux-registration-login-example",
+  "name": "team5-airline-react-redux",
   "version": "1.0.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/cornflourblue/react-redux-registration-login-example.git"
+    "url": "https://github.com/gopinathsjsu/team-project-fall21-cmpe202-team5.git"
   },
   "license": "MIT",
   "scripts": {

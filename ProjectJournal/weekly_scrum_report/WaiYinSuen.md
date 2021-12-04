@@ -63,3 +63,62 @@ Try to create some base code for others to reference.
 
 #### XP Core Value: Courage
 Lift effienency with docker dev environemt, and share work expirence with others.
+
+### 11/2-11/8
+#### What tasks did I work on / complete?
+    * Implemented user related back end code
+    * Implementad user related fron end code
+    * Demostrate to teammate of my research (MERN, robot framework)
+
+#### What am I planning to work on next?
+    * Implement manage user account front end code
+
+#### What tasks are blocked waiting on another team member?
+    * None
+
+#### XP Core Value: Courage
+Share experience from work with others
+
+### 11/9-11/15
+#### What tasks did I work on / complete?
+    * Implement manage user account front end code
+    * Implement dashboard
+    * Revise User table
+
+#### What am I planning to work on next?
+    * Implement flight search page front end code
+
+#### What tasks are blocked waiting on another team member?
+    * Milage/Reward
+
+#### XP Core Value: Courage
+N/A
+
+### 11/16-11/22
+#### What tasks did I work on / complete?
+    * Implement flight search page front end code
+    * Implement flight search result
+
+#### What am I planning to work on next?
+    * Implement flight booking page
+
+#### What tasks are blocked waiting on another team member?
+    * Milage/Reward, Flight booking backend code
+
+#### XP Core Value: Courage
+Try to have other members to work on their tasks.
+
+### 11/23-11/29
+#### What tasks did I work on / complete?
+    * Add flight selection on search result
+    * Implement flight booking page
+
+#### What am I planning to work on next?
+    * Implement booking function frontend and dashboard incoming flights
+    * Deploy to AWS server
+
+#### What tasks are blocked waiting on another team member?
+    * Milage/Reward, Flight booking backend code
+
+#### XP Core Value: Courage
+N/A

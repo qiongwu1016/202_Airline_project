@@ -62,3 +62,18 @@
 * Flight Search frontend code
 #### What tasks are blocked waiting on another team member?
 * None
+
+### 11/22
+#### What tasks did I work on / complete?
+* Update flight model
+* Update flight model
+* Update aircraft model
+* Update dummy data for testing flight and aircraft backend functions
+#### What am I planning to work on next?
+* Update flight model: allow flight service use aircraft model as a template to create an aircraft object in a flight.
+* Update flight model: flightId is created by concatenating flightNumber + "@" + depDateTime.
+* Update aircraft model: Each aircraft obj contains airplaneId, numberOfSeats, an array of seats objects. Each seat object contains status(enum : ['booked','available']) , rowNumber, positionNumber, userId, seatClass.
+* Update dummy data for testing flight and aircraft backend functions, located in backend/dummy_data
+* write flight search/add/update/ documents
+#### What tasks are blocked waiting on another team member?
+* waiting mileage and flight booking backend apis

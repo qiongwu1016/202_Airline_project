@@ -2,7 +2,8 @@ import config from 'config';
 import { authHeader } from '../_helpers';
 
 export const flightService = {
-    search
+    search,
+    toBook
 }
 
 function search(param) {
@@ -14,7 +15,9 @@ function search(param) {
     return fetch(`${config.apiUrl}/flights/search`, requestOptions).then(handleResponse);
 }
 
-
+function toBook(selectedFlight) {
+    return selectedFlight;
+}
 
 function handleResponse(response) {
     return response.text().then(text => {

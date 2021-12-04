@@ -10,6 +10,7 @@ import { LoginPage } from '../LoginPage';
 import { ManageUser } from '../ManageUser';
 import { RegisterPage } from '../RegisterPage';
 import { FlightSearch } from '../FlightSearch';
+import { FlightBook } from '../FlightBook';
 
 class App extends React.Component {
     constructor(props) {
@@ -34,9 +35,11 @@ class App extends React.Component {
                             <Switch>
                                 <PrivateRoute exact path="/" component={HomePage} />
                                 <PrivateRoute path="/manage_account" component={ManageUser} />
+                                <PrivateRoute path="/flight_book" component={FlightBook} />
                                 <Route path="/login" component={LoginPage} />
                                 <Route path="/flight_search" component={FlightSearch} />
                                 <Route path="/register" component={RegisterPage} />
+                                bookflight
                                 <Redirect from="*" to="/" />
                             </Switch>
                         </Router>

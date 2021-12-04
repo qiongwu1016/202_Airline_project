@@ -1,7 +1,7 @@
 {
     "name": "team5-airline",
     "version": "1.0.0",
-    "description": "NodeJS + MongoDB API for User Management, Authentication and Registration",
+    "description": "NodeJS + MongoDB API for Team5 Airline",
     "license": "MIT",
     "repository": {
         "type": "git",
